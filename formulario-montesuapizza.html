@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saborizza Lanches & Pizzas | Formulário</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="./style/formularios.css">
+    <!--Fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https: //fonts.googleapis.com/css2? família= Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 & display=swap" 
+rel="stylesheet">
+<!--Icons-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+
+
+<body>
+    <header id="event-description">
+       <div id="disclaimer"> <!--Aviso do evento-->
+         <h2>Saborizza</h2>
+         <p class="about-event">
+            Use sua criatividade, monte sua pizza dos sonhos com a Saborizza!
+         </p>
+
+         
+       </div><!--formulario para preencher-->
+       <div id="subscription-form">
+        <p>Formulário personalizado para montar a pizza dos sonhos!</p>
+
+        <form>
+            <div class="form-group">
+              <label for="name">Digite seu nome</label>
+              <input type="text" name="name" placeholder="Nome">  
+            </div>
+
+            <div class="form-group">
+                
+
+                <label for="interesse">Tamanho da pizza</label>
+                <select name="interesse">
+                 <option value="" disabled selected>Selecione</option><!--disabled n permite q seja selecionado a opção "selecione"-->
+                 <option value="opcao1">Pequena</option>
+                 <option value="opcao2">Média</option>
+                 <option value="opcao3">Grande</option>
+                 
+                 </select>
+
+                 <label for="interesse">Escolha o tipo de massa</label>
+                <select name="interesse">
+                 <option value="" disabled selected>Selecione</option><!--disabled n permite q seja selecionado a opção "selecione"-->
+                 <option value="opcao1">Tradicional</option>
+                 <option value="opcao2">Integral</option>
+                 <option value="opcao3">Sem glúten</option>
+                 
+                 </select>
+
+                 <label for="interesse">Escolha o tipo de molho</label>
+                <select name="interesse">
+                 <option value="" disabled selected>Selecione</option><!--disabled n permite q seja selecionado a opção "selecione"-->
+                 <option value="opcao1">Molho de Tomate Tradicional</option>
+                 <option value="opcao2">Molho de Pesto</option>
+                 <option value="opcao3">Molho Branco</option>
+                 
+                 </select>
+
+                 <label for="interesse">Escolha o tipo de  Escolha os Queijo</label>
+                <select name="interesse">
+                 <option value="" disabled selected>Selecione</option><!--disabled n permite q seja selecionado a opção "selecione"-->
+                 <option value="opcao1">Mussarela</option>
+                 <option value="opcao2">Parmesão</option>
+                 <option value="opcao3">Gorgonzola</option>
+                 
+                 </select>
+
+                 <label for="interesse"> Adicione Temperos e Especiarias</label>
+                <select name="interesse">
+                 <option value="" disabled selected>Selecione</option><!--disabled n permite q seja selecionado a opção "selecione"-->
+                 <option value="opcao1">Orégano</option>
+                 <option value="opcao2"> Manjericão fresco</option>
+                 <option value="opcao3"> Pimenta calabresa</option>
+                 
+                 </select>
+
+                 <div class="form-group">
+                    <label for="observacoes">Observações</label>
+                    <input type="text" name="observacoes" placeholder="Ex: Pouco molho de tomate/pouca cebola">  
+                  </div>
+
+
+              </div>
+              <button class="btn" onclick="exibirAlerta()">Pedir agora</button><br><br>
+              <button class="btn-menu"><a href="index.html" style="color: white; text-decoration: none;">Voltar ao menu inicial</a></button>
+        </form>
+
+
+
+       </div>
+    </header>
+
+    
+
+    <footer id="footer">
+      <h3>Saborizza Lanches & Pizzas</h3>
+      <p> Deixe seu dia mais saboroso!!!</p>
+      <p><span>&copy; 2023 - Design and Code by Henrique Brandao.</span></p>
+    </footer>
+
+
+    <!--Alert botões "pedir agora"-->
+    <script>
+
+      function exibirAlerta() {
+      
+      alert("Pedido realizdo com sucesso!");
+      
+      }
+      
+      </script>
+</body>
+
+</html>
