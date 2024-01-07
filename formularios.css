@@ -1,0 +1,248 @@
+:root {
+    --cor-principal: #ffc506;
+    --cor-secundaria: #95989A;
+    --cor-texto: #FFF;
+    --cor-text-secubdaria: #000;
+    --cor-text-tercearia: #5d5d5d;
+}
+
+* {
+    font-family:  'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*para os elementos n passarem da área útil/ respeitar a largura maxima da div*/
+}
+
+
+/*Event form*/
+#event-description {
+    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(/img/fundopizza.jpg);
+    background-position: center; /*centralizar a foto*/
+    background-size: cover;/*para aparecer o máximo possivel ba area util*/
+    height: 85vh; /* altura de 85% da tela*/
+    display: flex;
+    justify-content: space-around; /*para o conteudo ficar igualmente espaçados nas bordas e no meio*/
+    align-items: center; /*alinhar os itens ao centro*/
+    color: var(--cor-texto);
+} 
+
+#disclaimer h2,
+#disclaimer .event-date {
+  color: var(--cor-principal);  
+}
+
+#disclaimer h2 {
+    font-size: 3em; 
+    margin-bottom: 1em; /*para espaçar dos elementos abaixo*/
+}
+
+#disclaimer .about-event {
+   font-size: 2em; 
+   text-transform: uppercase; /*serve para deixar as letras de determinado elemento maiúsculas.*/
+   max-width: 350px ;
+   font-weight: bold;
+   margin-bottom:  1em;
+}
+
+#disclaimer p {
+ font-size: 1.2em;
+ margin-bottom: .3em;   
+}
+
+#disclaimer .event-date {
+    font-weight: bold; /*para destacar o texto*/
+}
+
+#subscription-form {
+   background-color: var(--cor-secundaria); /*cor de fundo do formulário (caixa cinxa*/
+   padding: 2em ; /*dar epaço das informações e a borda*/
+   max-width: 22%; /* largura do formulário*/
+}
+
+#subscription-form p {
+    font-size: 1.5em;
+    color:  var(--cor-text-secubdaria);
+    margin-bottom: 1em;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; /*um em baixo do outro*/
+    margin-bottom: .8em; /*dar espaço das opções do formulário*/
+
+}
+
+.form-group label {
+ color: var(--cor-text-tercearia);
+ margin-bottom: .3em;
+ font-weight: bold;   
+}
+
+.form-group input, 
+.form-group select {
+    padding:  6px 8px; /*separar o texto das bordas*/
+    border-radius: 5px ; /*permite arredondar as bordas de um elemento.*/
+    border: none; /*sem desenho da borda*/
+    outline: none; 
+}
+
+.btn {
+    background: var(--cor-principal) ;
+    color: var(--cor-texto);
+    text-transform: uppercase; /*serve para deixar as letras de determinado elemento maiúsculas.*/
+    width: 100%; 
+    border: none;
+    padding:12px ; /*para afastar o texto das bordas*/
+    cursor: pointer;/*para aparecer o ponteiro do mouse quando o usuario clicar*/
+    opacity: .8; /*para dar uma impressao do botão acenter com o hover/*/   
+}
+.btn-menu {
+    background: var(--cor-principal) ;
+    color: var(--cor-texto);
+    text-transform: uppercase; /*serve para deixar as letras de determinado elemento maiúsculas.*/
+    width: 100%; 
+    border: none;
+    padding:12px ; /*para afastar o texto das bordas*/
+    cursor: pointer;/*para aparecer o ponteiro do mouse quando o usuario clicar*/
+    opacity: .8; /*para dar uma impressao do botão acenter com o hover/*/  
+}
+
+.btn:hover {
+    opacity: 1;
+}
+.btn-menu:hover {
+    opacity: 1;
+}
+
+
+/*footer*/
+
+
+#footer {
+    text-align: center;
+    color: var(--cor-secundaria);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer h3 {
+   font-size: 1.8em;
+   margin-bottom: .5em; 
+}
+
+#footer p:nth-child(2) {
+ margin-bottom: 1em;
+ font-size:1.2em ;
+}
+
+#footer span {
+    font-weight: bold;
+}
+
+/*Mobile*/
+
+@media (max-width:450px){
+    .btn {
+        opacity: 1;
+    }
+
+    /*Event form*/
+    #event-description {
+        flex-direction: column;/*para colocar o formulário em baixo*/
+        height: auto;
+    }
+
+    #disclaimer {
+        padding: 2em;
+    }
+    #disclaimer  h2  {
+        margin-bottom: .5em;
+    }
+    #subscription-form {
+        max-width: 70%; /*posiciona o form na largura da tela mobile*/
+        margin-bottom: 2em;/*para afastar o form do "oq vc vai aprender"*/
+    }
+
+    /*benefits section*/
+.benefits {
+    flex-direction: column; /*um em baixo do outro*/
+    align-items: center;
+    width: auto;
+    padding: 2em;
+}
+
+.benefit {
+    max-width: 100%;/*para o p ocupar 100% da linha*/
+    margin-bottom:  2em;/*para afastar as informações*/
+
+}
+
+/*event location*/
+#location {
+    flex-direction: column; /*um em baixo do outro*/
+    height: auto;
+    text-align: center;
+    padding: 2em 0; /*em cima e em baix 2em e 0 nas laterais*/
+}
+
+#address {
+    order: 2;
+    flex-direction: column;
+    max-width: 100%;
+}
+#address i {
+    margin: .3em 0;   
+}
+
+#about-location {
+    order: 1;
+    max-height: 100%;
+}
+
+#about-location h3 {
+    margin-bottom: 0;
+}
+
+#about-location p{
+    display: none;
+}
+
+/*event details container*/
+
+.detail {
+    flex-direction: column;
+    margin-bottom: .5em;
+    gap: 0;
+
+}
+.detail img {
+    width: 100%;
+    margin:2em 0 ;
+
+}
+
+#detail-1 img {
+    display: none;
+}
+.detail-description {
+    padding: 0;
+}
+
+#detail-3 img {
+    order: 2;
+}
+#detail-3 .detail-description{
+    order: 1;
+}
+
+/*call to action section*/
+#cta {
+    text-align: center;
+}
+#cta .btn{
+    width: 80%; /*aumentar a largura do botão*/
+
+}
+}
